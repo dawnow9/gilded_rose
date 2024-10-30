@@ -27,8 +27,9 @@ class ItemService
     private function updateAgedBrie(Item $item): void
     {
         $quality = $item->getQuality();
+        $sellIn = $item->getSellIn();
 
-        if ($item->getSellIn() <= 0) {
+        if ($sellIn <= 0) {
             $item->setQuality($quality + 2);
         } else {
             $item->setQuality($quality + 1);
@@ -40,12 +41,13 @@ class ItemService
     private function updateBackstagePasses(Item $item): void
     {
         $quality = $item->getQuality();
+        $sellIn = $item->getSellIn();
 
-        if ($item->getSellIn() <= 0) {
+        if ($sellIn <= 0) {
             $item->setQuality(0);
-        } elseif ($item->getSellIn() <= 5) {
+        } elseif ($sellIn <= 5) {
             $item->setQuality($quality + 3);
-        } elseif ($item->getSellIn() <= 10) {
+        } elseif ($sellIn <= 10) {
             $item->setQuality($quality + 2);
         } else {
             $item->setQuality($quality + 1);
@@ -57,8 +59,9 @@ class ItemService
     private function updateElixir(Item $item): void
     {
         $quality = $item->getQuality();
+        $sellIn = $item->getSellIn();
 
-        if ($item->getSellIn() <= 0) {
+        if ($sellIn <= 0) {
             $item->setQuality($quality - 2);
         } else {
             $item->setQuality($quality - 1);
