@@ -1,6 +1,6 @@
 <?php
 
-namespace App\domain\item\model;
+namespace App\Domain\Item\Model;
 
 class BackstagePasses extends Item
 {
@@ -11,10 +11,5 @@ class BackstagePasses extends Item
             $sellIn,
             $quality
         );
-    }
-
-    public function update(): void
-    {
-        // TODO: Implement update() method.
     }
 }
