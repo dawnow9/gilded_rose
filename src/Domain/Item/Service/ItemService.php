@@ -11,14 +11,14 @@ class ItemService
 {
     public function update(Item $item): void
     {
-        switch (get_class($item)) {
-            case AgedBrie::class:
+        switch ($item->name) {
+            case AgedBrie::NAME:
                 $this->updateAgedBrie($item);
                 break;
-            case BackstagePasses::class:
+            case BackstagePasses::NAME:
                 $this->updateBackstagePasses($item);
                 break;
-            case Elixir::class:
+            case Elixir::NAME:
                 $this->updateElixir($item);
                 break;
         }
