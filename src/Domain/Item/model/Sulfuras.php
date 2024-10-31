@@ -4,10 +4,10 @@ namespace App\Domain\Item\Model;
 
 class Sulfuras extends Item
 {
-    const name = "Sulfuras, Hand of Ragnaros";
+    const NAME = "Sulfuras, Hand of Ragnaros";
 
     public function __construct(int $sellIn, int $quality)
     {
-        parent::__construct(self::name, $sellIn, $quality);
+        parent::__construct(self::NAME, $sellIn, $quality);
     }
 }
