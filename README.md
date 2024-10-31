@@ -16,8 +16,8 @@ Rozwiązanie zadania powinno być na branchu GitHub i zawierać co najmniej trzy
 - php 8.1
 - phpunit 9.5
 
-## Instalation
-To install dependencies run ```composer install```. To run test use ```./vendor/bin/phpunit```.
+## Installation
+To install dependencies run ```composer install```. To run test use ```./vendor/bin/phpunit``` or ```npm {t|test}```.
 
 ## Introduction
 
