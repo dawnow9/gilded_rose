@@ -17,7 +17,7 @@ Rozwiązanie zadania powinno być na branchu GitHub i zawierać co najmniej trzy
 - phpunit 9.5
 
 ## Installation
-To install dependencies run ```composer install```. To run test use ```./vendor/bin/phpunit``` or ```npm {t|test}```.
+To install dependencies run ```composer install```. To run test use ```composer test``` or ```npm {t|test}```.
 
 ## Introduction
 
