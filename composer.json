@@ -1,5 +1,6 @@
 {
     "name": "qafoo/gilded-rose-kata",
+    "description": "Gilded rose refactor kata",
     "autoload": {
         "psr-4": {
             "Tests\\": "tests/",
@@ -8,7 +9,7 @@
     },
     "require": {
         "php": ">=8.1",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "^10"
     },
     "scripts": {
         "test": "./vendor/bin/phpunit"
